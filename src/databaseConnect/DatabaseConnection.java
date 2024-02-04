@@ -6,18 +6,11 @@ import org.apache.commons.dbcp2.BasicDataSource;
 
 public class DatabaseConnection {
 
-//    private static final String JDBC_URL = "jdbc:sqlserver://localhost:1433;databaseName=BoxGame";
-//    private static final String USER = "sa";
-//    private static final String PASSWORD = "12345";
-    
-//    private static final String JDBC_URL = "jdbc:mysql://mygame.cneimk0ie6oh.ap-southeast-2.rds.amazonaws.com:3306/BoxGame";
-//    private static final String USER = "duongdat030";
-//    private static final String PASSWORD = "DkjJwhU76X";
-
     private static BasicDataSource dataSource;
 
     static {
         dataSource = new BasicDataSource();
+	//change your database here or use my database
         dataSource.setUrl("jdbc:mysql://mygame.cneimk0ie6oh.ap-southeast-2.rds.amazonaws.com:3306/BoxGame");
         dataSource.setUsername("duongdat030");
         dataSource.setPassword("DkjJwhU76X");
